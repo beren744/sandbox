@@ -26,8 +26,10 @@ root = lxml.html.fromstring(html)
 selectstuff=root.cssselect("a")
 print selectstuff
 for i in selectstuff:
-  print i.text
-  print i.attrib["href"]
+  print i.text   #.text come from xml and allows the script to grab the text inside the tag in I (which is a)
+  print i.attrib["href"] #.attrib come from xml and allows the script to grab the href attribute (link in this case)
+    #basically all the functions you can enter to specify where to grab are contained in the css selectors on the w3c page.
+    #https://www.w3schools.com/cssref/css_selectors.asp
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
