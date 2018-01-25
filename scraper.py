@@ -35,3 +35,9 @@ print selectstuff
 # text inside brackets is simle text is not a call for variables
 listylist = ["p1","p2","p3"] 
 print listylist
+urltoscrape="http://foo.com"
+listylist = ["p1","p2","p3"]
+for bla in listylist:
+  print blah
+  fullurl=urltoscrape+blah
+  print fullurl
