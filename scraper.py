@@ -7,6 +7,8 @@ print "hello world"
 #here i create a variable
 myname = "leo"
 print myname
+listylist = ["p1","p2","p3"] 
+print listylist
 # # Read in a page
 #scrape is a fuction from the scraperwiki library then need the url as value scraperwiki is a library that we got by putting import scraperwiki
 # print html show the code on the morph.io page meaning displays it VARIABLES HAS THE =SIGN, FUNCTION IS BETWEEN BRACKETS
@@ -33,5 +35,4 @@ print selectstuff
 # called "data.sqlite" in the current working directory which has at least a table
 # called "data".
 # text inside brackets is simle text is not a call for variables
-listylist = ["p1","p2","p3"] 
-print listylist
+
