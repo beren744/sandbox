@@ -15,9 +15,12 @@ print html
 # # Find something on the page using css selectors
 # ROOT BELOW TAKE THE CODE FROM THE PRINT HTML AND CONVERT PROBLEM IS WE DID NOT IMPORT LXML LIBRARY SO WE NEED TO UNCOMMENT THE LINE IMPORT
 # LXML
+# in this case ccssselect is working with the data we printed with root so the logic is first we call a function from a library
+#then you use other functions to make the code perform specific actions, we define new variables and then print it
 root = lxml.html.fromstring(html)
-# root.cssselect("div[align='left']")
-#
+root.cssselect("div[align='left']")
+selectstuff = root.cssselect("div[align='left']")
+print selectstuff
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
