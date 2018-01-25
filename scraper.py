@@ -23,7 +23,7 @@ print html
 #giving the tag a and the follwing commands allow the scraper to get all the text inside the link <a href>
 #grab all the a tags and put in selectstuff list variable
 root = lxml.html.fromstring(html)
-root.cssselect("a")
+selectstuff=root.cssselect("a")
 print selectstuff
 for i in selectstuff:
   print i.text
