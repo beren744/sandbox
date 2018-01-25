@@ -3,7 +3,7 @@
 # import the scraperwiki library to store data
 import scraperwiki
 # import lxml.html
-#
+print "hello world"
 # # Read in a page
 # html = scraperwiki.scrape("http://foo.com")
 #
