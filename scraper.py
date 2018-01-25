@@ -8,11 +8,13 @@ print "hello world"
 myname = "leo"
 print myname
 # # Read in a page
-#scrape is a fuction from the scraperwiki library then need the url as value scraperwiki is a library that we got by putting
+#scrape is a fuction from the scraperwiki library then need the url as value scraperwiki is a library that we got by putting import scraperwiki
+# print html show the code on the morph.io page meaning displays it VARIABLES HAS THE =SIGN, FUNCTION IS BETWEEN BRACKETS
 html = scraperwiki.scrape("http://foo.com")  
 print html
 # # Find something on the page using css selectors
-# root = lxml.html.fromstring(html)
+# ROOT BELOW TAKE THE CODE FROM THE PRINT HTML AND CONVERT
+root = lxml.html.fromstring(html)
 # root.cssselect("div[align='left']")
 #
 # # Write out to the sqlite database using scraperwiki library
