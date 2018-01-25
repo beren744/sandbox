@@ -2,7 +2,7 @@
 # including some code snippets below that you should find helpful
 # import the scraperwiki library to store data
 import scraperwiki
-# import lxml.html
+import lxml.html
 print "hello world"
 #here i create a variable
 myname = "leo"
@@ -13,7 +13,8 @@ print myname
 html = scraperwiki.scrape("http://foo.com")  
 print html
 # # Find something on the page using css selectors
-# ROOT BELOW TAKE THE CODE FROM THE PRINT HTML AND CONVERT
+# ROOT BELOW TAKE THE CODE FROM THE PRINT HTML AND CONVERT PROBLEM IS WE DID NOT IMPORT LXML LIBRARY SO WE NEED TO UNCOMMENT THE LINE IMPORT
+LXML
 root = lxml.html.fromstring(html)
 # root.cssselect("div[align='left']")
 #
