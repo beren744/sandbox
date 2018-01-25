@@ -19,10 +19,15 @@ print html
 #then you use other functions to make the code perform specific actions, we define new variables and then print it
 root = lxml.html.fromstring(html)
 #root.cssselect("div[align='left']")
-root.cssselect("a")
 # giving a rootselect a instead of align gives items to it
-selectstuff = root.cssselect("div[align='left']")
+#selectstuff = root.cssselect("div[align='left']"
+#giving the tag a and the follwing commands allow the scraper to get all the text inside the link <a href>
+#grab all the a tags and put in selectstuff list variable
+root.cssselect("a")
 print selectstuff
+for i in selectstuff:
+  print i.text
+  print i.attrib["href"]
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
