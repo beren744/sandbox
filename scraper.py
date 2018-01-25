@@ -41,5 +41,5 @@ urltoscrape="http://foo.com"
 listylist = ["p1","p2","p3"]
 for item in listylist:
   print item
-  fullurl=urltoscrape+blah
+  fullurl=urltoscrape+item
   print fullurl
