@@ -17,12 +17,12 @@ print html
 # LXML
 # in this case ccssselect is working with the data we printed with root so the logic is first we call a function from a library
 #then you use other functions to make the code perform specific actions, we define new variables and then print it
-root = lxml.html.fromstring(html)
 #root.cssselect("div[align='left']")
 # giving a rootselect a instead of align gives items to it
 #selectstuff = root.cssselect("div[align='left']"
 #giving the tag a and the follwing commands allow the scraper to get all the text inside the link <a href>
 #grab all the a tags and put in selectstuff list variable
+root = lxml.html.fromstring(html)
 root.cssselect("a")
 print selectstuff
 for i in selectstuff:
