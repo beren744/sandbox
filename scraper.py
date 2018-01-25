@@ -8,8 +8,9 @@ print "hello world"
 myname = "leo"
 print myname
 # # Read in a page
-# html = scraperwiki.scrape("http://foo.com")
-#
+#scrape is a fuction from the scraperwiki library then need the url as value scraperwiki is a library that we got by putting
+html = scraperwiki.scrape("http://foo.com")  
+print html
 # # Find something on the page using css selectors
 # root = lxml.html.fromstring(html)
 # root.cssselect("div[align='left']")
