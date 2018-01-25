@@ -32,3 +32,6 @@ print selectstuff
 # All that matters is that your final data is written to an SQLite database
 # called "data.sqlite" in the current working directory which has at least a table
 # called "data".
+# text inside brackets is simle text is not a call for variables
+listylist = ["p1","p2","p3"] 
+print listylist
